@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="imgs/favicon.png">
+    <title>Dra. Sara Viegas - Serviços</title>
+</head>
+<body onresize="mudarTamanho()">
+
+    <header>
+        <section class="Informacoes_Header"></section>
+            <div class="infos">
+                <span class="material-icons">call</span>
+                <h4>&nbsp (42) 9 9984-4017 &nbsp&nbsp&nbsp</h4>
+                <span class="material-icons">location_on</span>
+                <h4>&nbsp Rua Sete de Setembro, 800 - Sala 302 - Centro, Ponta Grossa - PR &nbsp</h4>
+            </div>
+        <section class="Menu">
+            <div class="menu_pc">
+                <a href="home.html"><img class="logo" src="imgs/logo.png" alt="Logo"></a>
+                                <div class="icones_menu">
+                    <span><a aria-label="Chat" target="_blank" href="https://wa.me/5542999844017">
+                    <img class="icones_redes" alt="Chat on WhatsApp" src="imgs/whats.svg"/></a></span>&nbsp
+                    <span><a href="https://instagram.com/drasaraviegas?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D" target="_blank"><img class="icones_redes" src="imgs/instagram.png" alt="Icone Instagram"></a></span>&nbsp
+                    <span><a href="https://www.facebook.com/drasara.odpediatra?mibextid=ZbWKwL" target="_blank"><img class="icones_redes" src="imgs/facebook.png" alt="Icone Facebook"></a></span>&nbsp
+                    <span><a href="https://www.youtube.com/@drasaraviegas" target="_blank"><img class="icones_redes" src="imgs/youtube.png" alt="Icone YouTube"></a></span>&nbsp
+                </div>
+                <nav class="pc">
+                    <ul>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="sobre.html">Sobre</a></li>
+                        <li>
+                            <a href="servicos.html">Serviços</a>
+                            <ul class="submenu_ul">
+                                <li class="submenu_li"><a class="submenu_a" href="servicos.html#anchor_odontopediatria">Odontopediatria</a></li>
+                                <li class="submenu_li"><a class="submenu_a" href="servicos.html#anchor_amamentacao">Consultoria Amamentação</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="ebooks.html">E-Books</a>
+                            <ul class="submenu_ul">
+                                <li class="submenu_li"><a class="submenu_a" href="ebooks.html#anchor_manual_mae_prevenida">Manual da Mãe Prevenida</a></li>
+                                <li class="submenu_li"><a class="submenu_a" href="ebooks.html#anchor_guia_completo_amamentacao">Guia Completo da Amamentação</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="youtube.html">YouTube</a>
+                            <ul class="submenu_ul">
+                                <li class="submenu_li"><a class="submenu_a" href="youtube.html#anchor_ytclubinho">Clubinho da Tia Sara</a></li>
+                                <li class="submenu_li"><a class="submenu_a" href="youtube.html#anchor_ytamamentacao">Amamentação</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </nav>
+                <button onclick="menuShow()"><span class="material-symbols-outlined">menu</span></button>
+            </div>
+
+                <nav class="mobile">
+                    <ul>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="sobre.html">Sobre</a></li>
+                        <li>
+                            <a href="servicos.html">Serviços</a>
+                            <button onclick="submenuServicos()"><span class="material-icons-outlined">arrow_drop_down</span></button>
+                        </li>
+                        <ul class="submenu_ulmobile_servicos">
+                            <li class="submenu_limobile"><a class="submenu_amobile" href="servicos.html#anchor_odontopediatria">Odontopediatria</a></li>
+                            <li class="submenu_limobile"><a class="submenu_amobile" href="servicos.html#anchor_amamentacao">Consultoria Amamentação</a></li>
+                        </ul>
+                        <li>
+                            <a href="ebooks.html">E-Books</a>
+                            <button onclick="submenuEbooks()"><span class="material-icons-outlined">arrow_drop_down</span></button>
+                        </li>
+                        <ul class="submenu_ulmobile_ebooks">
+                            <li class="submenu_limobile"><a class="submenu_amobile" href="ebooks.html#anchor_manual_mae_prevenida">Manual da Mãe Prevenida</a></li>
+                            <li class="submenu_limobile"><a class="submenu_amobile" href="ebooks.html#anchor_guia_completo_amamentacao">Guia Completo da Amamentação</a></li>
+                        </ul>
+                        <li>
+                            <a href="youtube.html">YouTube</a>
+                            <button onclick="submenuYoutube()"><span class="material-icons-outlined">arrow_drop_down</span></button>
+                        </li>
+                        <ul class="submenu_ulmobile_youtube">
+                            <li class="submenu_limobile"><a class="submenu_amobile" href="youtube.html#anchor_ytclubinho">Clubinho da Tia Sara</a></li>
+                            <li class="submenu_limobile"><a class="submenu_amobile" href="youtube.html#anchor_ytamamentacao">Amamentação</a></li>
+                        </ul>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+            
+        </section>
+    </header>
+
+    <main>
+        <section class="Servicos">
+
+            <div id="anchor_odontopediatria" class="titulo_servicos">
+                <h1>Odontopediatria</h1>
+            </div>
+
+            <div class="fundo_servicos">
+
+                <div class="servico">
+                    <img class="img_servico" src="imgs/esp1.jpeg" alt="">
+                    <div class="txt_servico">
+                        <h2>Pré-Natal Odontológico e Atendimento a Gestantes</h2>
+                        <button onclick="exibirTexto(this)" class="abrirfechar_modal" id="open-esp1">
+                            <div class="call_box">
+                                <h3>Saiba mais!</h3>
+                            </div>
+                        </button>       
+                    </div>
+                </div>
+
+                <div class="servico">
+                    <img class="img_servico" src="imgs/esp2.jpeg" alt="">
+                    <div class="txt_servico">
+                        <h2>Atendimento a Bebês</h2>
+                        <button onclick="exibirTexto(this)" class="abrirfechar_modal" id="open-esp2">
+                            <div class="call_box">
+                                <h3>Saiba mais!</h3>
+                            </div>
+                        </button>    
+                    </div>
+                </div>
+
+                <div class="servico">
+                    <img class="img_servico" src="imgs/esp3.jpg" alt="">
+                    <div class="txt_servico">
+                        <h2>Teste da Linguinha e Cirurgia de Freio</h2>
+                        <button onclick="exibirTexto(this)" class="abrirfechar_modal" id="open-esp3">
+                            <div class="call_box">
+                                <h3>Saiba mais!</h3>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="servico">
+                    <img class="img_servico" src="imgs/esp4.jpg" alt="">
+                    <div class="txt_servico">
+                        <h2>Prevenção</h2>
+                        <button onclick="exibirTexto(this)" class="abrirfechar_modal" id="open-esp4">
+                            <div class="call_box">
+                                <h3>Saiba mais!</h3>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="servico">
+                    <img class="img_servico" src="imgs/esp5.jpg" alt="">
+                    <div class="txt_servico">
+                        <h2>Tratamento e Prevenção de Cáries</h2>
+                        <button onclick="exibirTexto(this)" class="abrirfechar_modal" id="open-esp5">
+                            <div class="call_box">
+                                <h3>Saiba mais!</h3>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="servico">
+                    <img class="img_servico" src="imgs/esp6.jpg" alt="">
+                    <div class="txt_servico">
+                        <h2>Atendimento de Urgência por Traumas e Fraturas nos Dentes</h2>
+                        <button onclick="exibirTexto(this)" class="abrirfechar_modal" id="open-esp6">
+                            <div class="call_box">
+                                <h3>Saiba mais!</h3>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="servico">
+                    <img class="img_servico" src="imgs/esp7.jpg" alt="">
+                    <div class="txt_servico">
+                        <h2>Coroas Estéticas em Dentes de Leite</h2>
+                        <button onclick="exibirTexto(this)" class="abrirfechar_modal" id="open-esp7">
+                            <div class="call_box">
+                                <h3>Saiba mais!</h3>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="servico">
+                    <img class="img_servico" src="imgs/esp8.jpg" alt="">
+                    <div class="txt_servico">
+                        <h2>Tratamento de Canal em Dentes de Leite</h2>
+                        <button onclick="exibirTexto(this)" class="abrirfechar_modal" id="open-esp8">
+                            <div class="call_box">
+                                <h3>Saiba mais!</h3>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="servico">
+                    <img class="img_servico" src="imgs/esp9.jpg" alt="">
+                    <div class="txt_servico">
+                        <h2>Tratamento e Prevenção de Doenças das Gengivas</h2>
+                        <button onclick="exibirTexto(this)" class="abrirfechar_modal" id="open-esp9">
+                            <div class="call_box">
+                                <h3>Saiba mais!</h3>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="servico">
+                    <img class="img_servico" src="imgs/esp10.jpg" alt="">
+                    <div class="txt_servico">
+                        <h2>Extrações</h2>
+                        <button onclick="exibirTexto(this)" class="abrirfechar_modal" id="open-esp10">
+                            <div class="call_box">
+                                <h3>Saiba mais!</h3>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="servico">
+                    <img class="img_servico" src="imgs/esp11.jpg" alt="">
+                    <div class="txt_servico">
+                        <h2>Próteses e Aparelhos Infantis</h2>
+                        <button onclick="exibirTexto(this)" class="abrirfechar_modal" id="open-esp11">
+                            <div class="call_box">
+                                <h3>Saiba mais!</h3>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="servico">
+                    <img class="img_servico" src="imgs/esp12.jpg" alt="">
+                    <div class="txt_servico">
+                        <h2>Coleta de Células-Tronco</h2>
+                        <button onclick="exibirTexto(this)" class="abrirfechar_modal" id="open-esp12">
+                            <div class="call_box">
+                                <h3>Saiba mais!</h3>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="anchor_amamentacao" class="titulo_servicos">
+                <h1>Amamentação</h1>
+            </div>
+
+            <div class="fundo_servicos">
+                <div class="servico">
+                    <img class="img_servico" src="imgs/esp13.jpg" alt="">
+                    <div class="txt_servico">
+                        <h2>Consulta de Amamentação na Gestação</h2>
+                        <button onclick="exibirTexto(this)" class="abrirfechar_modal" id="open-esp13">
+                            <div class="call_box">
+                                <h3>Saiba mais!</h3>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="servico">
+                    <img class="img_servico" src="imgs/esp14.jpg" alt="">
+                    <div class="txt_servico">
+                        <h2>Visita a Maternidade</h2>
+                        <button onclick="exibirTexto(this)" class="abrirfechar_modal" id="open-esp14">
+                            <div class="call_box">
+                                <h3>Saiba mais!</h3>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="servico">
+                    <img class="img_servico" src="imgs/esp15.jpg" alt="">
+                    <div class="txt_servico">
+                        <h2>Consultoria de Amamentação no Pós-Parto</h2>
+                        <button onclick="exibirTexto(this)" class="abrirfechar_modal" id="open-esp15">
+                            <div class="call_box">
+                                <h3>Saiba mais!</h3>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="servico">
+                    <img class="img_servico" src="imgs/esp16.jpg" alt="">
+                    <div class="txt_servico">
+                        <h2>Consultoria de Amamentação no Retorno ao Trabalho</h2>
+                        <button onclick="exibirTexto(this)" class="abrirfechar_modal" id="open-esp16">
+                            <div class="call_box">
+                                <h3>Saiba mais!</h3>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="servico">
+                    <img class="img_servico" src="imgs/esp17.jpg" alt="">
+                    <div class="txt_servico">
+                        <h2>Consultoria de Desmame Respeitoso</h2>
+                        <button onclick="exibirTexto(this)" class="abrirfechar_modal" id="open-esp17">
+                            <div class="call_box">
+                                <h3>Saiba mais!</h3>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+
+
+            </div>
+            
+        </section>
+
+        <section class="Modais">
+            <div id="fade" class="hide"></div>
+            <div id="modal" class="hide">
+              <div class="modal-header">
+                <h2 id="tit_open-esp1" class="txt_esp">Pré-Natal Odontológico e Atendimento a Gestantes</h2>
+                <h2 id="tit_open-esp2" class="txt_esp">Atendimento a Bebês</h2>
+                <h2 id="tit_open-esp3" class="txt_esp">Teste da Linguinha e Cirurgia de Freio</h2>
+                <h2 id="tit_open-esp4" class="txt_esp">Prevenção</h2>
+                <h2 id="tit_open-esp5" class="txt_esp">Tratamento e Prevenção de Cáries</h2>
+                <h2 id="tit_open-esp6" class="txt_esp">Atendimento de Urgência por Traumas e Fraturas nos Dentes</h2>
+                <h2 id="tit_open-esp7" class="txt_esp">Coroas Estéticas em Dentes de Leite</h2>
+                <h2 id="tit_open-esp8" class="txt_esp">Tratamento de Canal em Dentes de Leite</h2>
+                <h2 id="tit_open-esp9" class="txt_esp">Tratamento e Prevenção de Doenças das Gengivas</h2>
+                <h2 id="tit_open-esp10" class="txt_esp">Extrações</h2>
+                <h2 id="tit_open-esp11" class="txt_esp">Próteses e Aparelhos Infantis</h2>
+                <h2 id="tit_open-esp12" class="txt_esp">Coleta de Células-Tronco</h2>
+                <h2 id="tit_open-esp13" class="txt_esp">Consulta de Amamentação na Gestação</h2>
+                <h2 id="tit_open-esp14" class="txt_esp">Visita a Maternidade</h2>
+                <h2 id="tit_open-esp15" class="txt_esp">Consultoria de Amamentação no Pós-Parto</h2>
+                <h2 id="tit_open-esp16" class="txt_esp">Consultoria de Amamentação no Retorno ao Trabalho</h2>
+                <h2 id="tit_open-esp17" class="txt_esp">Consultoria de Desmame Respeitoso</h2>
+                <button class="abrirfechar_modal" id="close-modal">
+                    <div class="call_box">
+                        <h3>X</h3>
+                    </div>
+              </div>
+              <div class="modal-body">
+                <h3>Informações sobre a consulta</h3><br>
+
+                <div id="txt_open-esp1" class="txt_esp">
+                    <p>Nessa consulta iremos atuar na prevenção de PARTOS PREMATUROS e também de BAIXO PESO AO NASCIMENTO, através de uma série de orientações sobre cuidados, higiene bucal, e até se for necessário, atendimento clínico da gestante.</p>
+                    <p>Existe um atendimento odontológico especializado para grávidas, anestésicos específicos, posições adequadas na cadeira e exames certos que somente um profissional capacitado pode fornecer.</p>
+                    <p>Agende, preferencialmente entre o terceiro e sexto mês de gestação, ou em caso de dor.</p>
+                    <br><h4>Média de 1 a 2 consultas de 1h</h4>
+                    <h4>Consultório</h4><br>
+                </div>
+
+                <div id="txt_open-esp2" class="txt_esp">
+                    <p>Na Primeira Consulta do bebê, faremos a avaliação dos tecidos moles e dentinhos do bebê com o objetivo de analisar seu desenvolvimento e como está sendo feita a higienização pelos pais. Serão dadas também orientações de cuidados que você deve ter com a saúde bucal de seu filho a partir desse momento. Sugerimos os melhores modelos de escovas e pastas de dentes que serão usadas nesses primeiros cuidados com os dentes de leite.</p>
+                    <br><h4>Média de 1 consulta de 1h</h4>
+                    <h4>Consultório</h4><br>
+                </div>
+
+                <div id="txt_open-esp3" class="txt_esp">
+                    <p>O teste da linguinha é um exame padronizado que tem como objetivo diagnosticar e indicar o tratamento precoce das limitações dos movimentos da língua causadas pela língua presa, que podem comprometer as funções de sugar, engolir, mastigar e falar. De acordo com a Lei nº 13.002/2014 é obrigatória a realização do protocolo de avaliação do frênulo da língua em bebês em todos os hospitais e maternidades do Brasil. Caso o teste não tenha sido feito no hospital você poderá fazer aqui comigo! É importante que o bebê faça o exame o mais cedo possível, evitando dificuldades na amamentação, possível perda de peso e, principalmente, o desmame precoce, com introdução desnecessária da mamadeira.</p>
+                    <p>A cirurgia é realizada, quando, após o teste da linguinha, é diagnosticado um encurtamento deste, dificultando a movimentação da língua. Ela é um tratamento seguro, rápido e eficaz que pode proporcionar alívio imediato dos sintomas e promover a amamentação. Realizada com anestesia, logo após o procedimento, o bebê é colocado para amamentar imediatamente minimizando o desconforto.</p>
+                    <p>Agendar, preferencialmente no primeiro mês de vida.</p>
+                    <br><h4>Média de 1 a 2 consultas de 1h</h4>
+                    <h4>Consultório</h4><br>
+                </div>
+
+                <div id="txt_open-esp4" class="txt_esp">
+                    <p>Nessa consulta podemos acompanhar o desenvolvimento do seu filho e reforçar os cuidados preventivos. Por meio de idas regulares ao consultório, orientamos quanto a higienização bucal e observamos alterações que possam colocar em risco a saúde bucal, fazendo com que ele cresça com dentes sadios, livres da doença cárie e de outras doenças.</p>
+                    <br><h4>Média de 1 a 2 consultas de 1h</h4>
+                    <h4>Consultório</h4><br>
+                </div>
+
+                <div id="txt_open-esp5" class="txt_esp">
+                    <p>A cárie dentária é uma doença causada por bactérias que se desenvolve a partir de diferentes fatores e é capaz de prejudicar e causar a destruição dos dentes quando não tratada. Quando não há higienização adequada, os bebês e crianças podem ter cáries nos dentes de leite. E não é só porque eles vão ser substituídos com o tempo que essa lesão deixa de ser um problema. Quando não tratado corretamente, o problema pode afetar o dente permanente que ainda nem nasceu. Com isso, ele pode nascer com manchas, má formação, entre outras imperfeições.</p>
+                    <p>Nessa consulta, quando identificamos o problema instalado, indicamos a melhor forma de tratamento, que podem incluir tratamentos com flúor, selantes, restaurações, tratamento de canal e extrações.</p>
+                    <br><h4>Média de 1 a 2 consultas de 1h</h4>
+                    <h4>Consultório</h4><br>
+                </div>
+
+                <div id="txt_open-esp6" class="txt_esp">
+                    <p>Os traumas dentários são muito frequentes na infância, sendo os dentes da frente os mais envolvidos. Mesmo que a criança não se queixe de dor nem haja sangramento após um acidente envolvendo a boca, a consulta se faz necessária. A demora na busca pelo atendimento resulta em sequelas mais graves, que podem exigir tratamentos mais extensos ou ocasionar a perda do dente.</p>
+                    <p>Nessa consulta, o trauma dentário deve ser examinado para determinar o diagnóstico real sobre as consequências do acidente e oferecer o melhor tratamento.</p>
+                    <br><p>CUIDADOS INICIAIS:</p><br>
+                    <ul>
+                        <li>Limpe o local com água corrente, removendo o material contaminado (terra, areia, etc);</li>
+                        <li>Se houver algum sangramento coloque uma compressa com pano limpo ou gelo no local;</li>
+                        <li>Localize o dente perdido e traga-o dentro de um copo de leite, água ou soro fisiológico.</li>
+                    </ul>
+                    <br><h4>Média de 1 a 2 consultas de 1h</h4>
+                    <h4>Consultório</h4><br>
+                </div>
+
+                <div id="txt_open-esp7" class="txt_esp">
+                    <p>As coroas estéticas, para dentes de leite, são feitas de celulóide, acetato ou poliéster, sendo “forminhas” já pré-preparadas ao atendimento clínico da criança. Embora não seja a única, é uma alternativa muito eficaz no caso de crianças que não cooperam ou têm um limite pequeno de tolerância na cadeira odontológica. Com esse tratamento,  conseguimos devolver estética, função e a saúde do sorriso da criança. </p>
+                    <p>Mediante a avaliação do quadro clínico.</p>
+                    <br><h4>Média de 1 a 2 consultas de 1h</h4>
+                    <h4>Consultório</h4><br>
+                </div>
+
+                <div id="txt_open-esp8" class="txt_esp">
+                    <p>O tratamento de canal é necessário quando a polpa dentária está infeccionada ou até mesmo morta. Entre os principais motivos que podem causar danos ou infecções da polpa dentária estão cáries profundas, dentes quebrados ou até mesmo trauma forte que cause algum dano aos dentes.</p>
+                    <p>Nessa consulta, conseguimos indicar e realizar o procedimento de recuperação da parte interna (a polpa do dente), removendo o tecido e, consequentemente, vedando o canal. O procedimento, inclusive, é extremamente importante, pois quando os dentes de leite acabam ficando comprometidos, pode-se afetar o desenvolvimento dos futuros dentes permanentes.</p>
+                    <p>Mediante a avaliação do quadro clínico.</p>
+                    <br><h4>Média de 1 a 2 consultas de 1h</h4>
+                    <h4>Consultório</h4><br>
+                </div>
+
+                <div id="txt_open-esp9" class="txt_esp">
+                    <p>Problemas gengivais nas crianças, assim como nos adultos e idosos, aparecem de forma sutil, sendo os sintomas mais clássicos a gengiva avermelhada, mais inchada e com sangramento com o atrito, como no caso da escovação e no uso do fio dental. Ter atenção aos sinais da doença nas gengivas é fundamental para iniciar o tratamento o quanto antes evitar com que a doença evolua para um quadro mais grave.</p>
+                    <p>Nessa consulta, avaliamos o quadro, fazemos o diagnóstico e realizamos o tratamento, removendo a placa bacteriana e o tártaro. Também pode ser necessário aplicar flúor para evitar novos problemas, além de fazer as orientações necessárias para a manutenção do tratamento em casa.</p>
+                    <p>Mediante a avaliação do quadro clínico.</p>
+                    <br><h4>Média de 1 consulta de 1h</h4>
+                    <h4>Consultório</h4><br>
+                </div>
+                    
+                <div id="txt_open-esp10" class="txt_esp">
+                    <p>Extração dos dentes de leite pode ser indicada por diferentes motivos.</p>
+                    <p>O primeiro deles é pela troca natural pelos dentes permanentes. Muitas vezes a extração dos dentes de leite é necessária para que os permanentes apareçam, como nos quadros de retenção prolongada e anquilose, afetando o alinhamento da arcada dentária e a mastigação.</p>
+                    <p>O segundo motivo mais comum, é por lesões de cárie não tratadas no tempo certo e que progrediram até a destruição do dente de leite. A extração nesses casos é indicada para evitar que a infecção atinja o dente permanente em formação.</p>
+                    <p>Por fim, casos de trauma dental também são um dos motivos de indicação para extração em dentes de leite.</p>
+                    <p>Nesse tratamento avaliamos, diagnosticamos e propomos o melhor tratamento, para que o dente permanente cresça e se posicione de forma adequada.</p>
+                    <p>Mediante a avaliação do quadro clínico.</p>
+                    <br><h4>Média de 1 a 2 consultas de 1:30h</h4>
+                    <h4>Consultório</h4><br>
+                </div>
+
+                <div id="txt_open-esp11" class="txt_esp">
+                    <p>Além de outras funções, como alimentação, fala e estética, a principal função do dente de leite na boca da criança é manter o espaço para o dente permanente irromper. Perder um dente antes do tempo certo, é considerado um dos fatores de origem de uma mordida considerada anormal na idade adulta.</p>
+                    <p>Nessa consulta, planejamos o uso de um aparelho após a extração precoce do dente de leite, para que não haja falta de espaço e comprometimento da dentição permanente.</p>
+                    <p>Mediante a avaliação do quadro clínico.</p>
+                    <br><h4>Média de 1 a 4 consultas de 1h</h4>
+                    <h4>Consultório</h4><br>
+                </div>
+
+                <div id="txt_open-esp12" class="txt_esp">
+                    <p>A coleta de células-tronco do dente de leite permite as crianças guardarem o melhor da infância: a sua saúde. As células-tronco mesenquimais, presentes nos dentes de leite, podem originar novas células de órgãos e tecidos do corpo humano, além de poder servir não só ao doador, mas também a toda sua família para um futuro tratamento de doenças degenerativas.</p>
+                    <p>Especialmente para as crianças, o armazenamento é bastante vantajoso. A criopreservação permite “paralisar” a idade das células-tronco, fazendo com que seus filhos tenham suas próprias células-tronco armazenadas por décadas com a mesma idade que foram coletadas. Com isso, ao longo da vida e do envelhecimento, as células-tronco jovens podem ajudar a regenerar ou mesmo substituir células envelhecidas que já não estejam funcionando corretamente.</p>
+                    <p>Somos os únicos credenciados na região a oferecer esse serviço pela R-Crio Centro de Processamento Celular, que são habilitados para criopreservar, processar e preparar células-tronco para uso clínico em pessoas. </p>
+                    <p>Nessa consulta, obtemos a polpa do dente de leite, a partir da extração dentária, podendo ser realizada durante o período de troca dos dentes da criança, entre os 5 e 12 anos.</p>
+                    <p>Mediante a avaliação do quadro clínico.</p>
+                    <br><h4>Média de 2 a 3 consultas de 1h</h4>
+                    <h4>Consultório</h4><br>
+                </div>
+
+                <div id="txt_open-esp13" class="txt_esp">
+                    <p>Os problemas relacionados a amamentação não precisam ser tratados após sua ocorrência, eles podem ser prevenidos através de INFORMAÇÃO.</p>
+                    <p>Nessa consulta falaremos sobre o cuidado necessário com as mamas, como ocorre a produção de leite, quais são e como contornar as principais complicações que podem acontecer nos primeiros dias, qual a importância da livre demanda (como, quanto e com qual frequência oferecer o seio), posições para amamentar, pega correta, diferença entre colostro e leite maduro, ganho de peso e o que esperar do desenvolvimento e do comportamento do recém-nascido.</p>
+                    <p>No final da consulta, a futura mamãe ganhará o E-book GUIA COMPLETO DA AMAMENTAÇÃO para garantir a sua construção do conhecimento até a chegada do seu bebê.</p>
+                    <p>Consulta recomendada para todas as famílias, em especial as que esperam gêmeos, quem passou por redução mamária, diabetes gestacional, com mamilos invertidos ou experiência prévia de insatisfação na amamentação</p>
+                    <p>Agende entre a 30ª e 35ª semana.</p>
+                    <br><h4>Média de 1:20h</h4>
+                    <h4>Online ou em Consultório</h4><br>
+                </div>
+
+                <div id="txt_open-esp14" class="txt_esp">
+                    <p>O objetivo dessa consulta é fazer orientações e correções pontuais para otimizar e estabelecer a amamentação. Será dado suporte quanto a pega correta e posicionamento da mãe e do bebê para a amamentação acontecer de forma efetiva.</p>
+                    <br><h4>Média de 1h a 1:30h</h4>
+                    <h4>Maternidades de Ponta Grossa – PR e região</h4><br>
+                </div>
+
+                <div id="txt_open-esp15" class="txt_esp">
+                    <p>Nessa consulta é dado o suporte necessário para que a mãe e o bebê consigam evoluir a amamentação de forma efetiva. Nela, verificamos e fazemos eventuais ajustes na técnica, além de fazer orientações preventivas para evitar intercorrências e, caso de intercorrências já instaladas, como ingurgitamento mamário (leite empedrado), mastite, mamilos machucados, dor, pega incorreta ao seio, fazemos as devidas correções.</p>
+                    <p>Será oferecido um plano de ação com sugestões e condutas baseadas nas possibilidades de cada família para solução de problemas.</p>
+                    <p>Acompanhamento por Whatsapp por 7 dias</p>
+                    <br><h4>Média de 2:30h</h4>
+                    <h4>Online, em Consultório ou domiciliar</h4><br>
+                </div>
+
+                <div id="txt_open-esp16" class="txt_esp">
+                    <p>Nessa consulta vou te auxiliar e preparar para retornar ao trabalho e fazer, sem que, na sua ausência, seu filho se desinteresse pelo seio. Vou te orientar sobre como ordenhar, armazenar e oferecer o leite, construindo um protocolo de ordenhas para cada caso, levando em conta as necessidades e objetivos da mãe para que ela possa retornar ao trabalho com segurança, garantindo um estoque para seu pequeno.</p>
+                    <p>Também iremos ensaiar as primeiras ofertas de leite para o bebê usando o copinho e contando com a ajuda do cuidador/a, que está especialmente convidado/a vir!</p>
+                    <p>Agende pelo menos 30 dias antes do retorno ao trabalho</p>
+                    <br><h4>Média de 1:30h</h4>
+                    <h4>Online ou em Consultório</h4><br>
+                </div>
+
+                <div id="txt_open-esp17" class="txt_esp">
+                    <p>Nessa consulta, analisaremos toda a história da amamentação, a rotina e a relação da dupla mãe-bebê, para, a partir daí, traçarmos um plano de condução de desmame. A partir delas você terá ferramentas e segurança necessária para finalizar este ciclo tão especial, de forma tranquila, gradual e gentil, respeitando as necessidades de cada família.</p>
+                    <p>Recomendamos para famílias com crianças a partir de 12 meses de vida. É necessário que a criança tenha algum grau de entendimento para a sua realização.  </p>
+                    <br><h4>Média de 1h</h4>
+                    <h4>Online ou em Consultório</h4><br>
+                </div>
+
+                <div class="call_box">
+                    <a target="_blank" href="https://wa.me/5542999844017"><h3>Agendar</h3></a>
+                </div>
+              </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="rodape_esq">
+            <a href="home.html"><img class="logo" src="imgs/logo.png" alt="Logo"></a>
+            <h4>Rua Sete de Setembro, 800 - Sala 302 - Centro, Ponta Grossa - PR</h4>
+            <h4>Ponta Grossa, Paraná, Brasil</h4>
+            <h4>(42) 9 9984-4017</h4>
+            <h4>E-mail: sara_fracasso@yahoo.com.br</h4>
+        </div>
+
+        <div class="rodape_dir">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="servicos.html">Serviços</a></li>
+                    <li><a href="ebooks.html">E-Books</a></li>
+                    <li><a href="youtube.html">YouTube</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+        </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+    
+</body>
+    
+</html>
+

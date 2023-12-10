@@ -1,0 +1,977 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Open+Sans&family=Ysabeau+Office:ital,wght@0,100;0,400;1,200&display=swap');
+
+:root {
+    /*Palheta de Cores Antiga*/
+    --Aazul: #8c9eed3d;
+    --AazulO: #dae4f570;
+    --Arosa: #F4DFDF;
+    --Aamarelo: #FFF6CF;
+    --Apreto: #A09C9C;
+    --Averde: #D9EDD5;
+    /*Palheta de Cores Nova*/
+    --Nroxo: #6c59a8;
+    --Nlilas: #9376f5;
+    --Nverde: #c1f469;
+    --Nvinho: #a83866;
+    --Nrosa: #f55d9b;
+    /*Palheta de Cores Mais Nova*/
+    --NewRoxo: #9194bf;
+    --NewLilas: #d9c2dc;
+    --NewVermelho: #f9cdc1;
+    --NewAzul: #bbddf4;
+    --NewAzulT: #bbddf482;
+    --NewVerde: #b3dcc0;
+
+    /*Cores Básicas*/
+    --Prata: rgb(248, 248, 248);
+    --Cinza: rgba(0, 0, 0, 0.7);
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Ysabeau Office', sans-serif;
+    color: black;
+}
+
+/*FORMATAÇÃO*/
+
+h1 {
+    font-family: 'Dancing Script';
+    color: var(--Nrosa);
+    font-size: 32px;
+    text-align: center;
+}
+
+h2 {
+    color: var(--Nroxo);
+    font-size: 20px;
+    text-align: center;
+}
+
+h3 {
+    font-size: 20px;
+    color: black;
+    text-align: center;
+}
+
+h4 {
+    font-size: 16px;
+    color: var(--Cinza);
+    text-align: center;
+}
+
+p {
+    text-align: justify;
+    text-indent: 10px;
+    color: var(--Cinza);
+    font-size: 16px;
+}
+
+.p_apresentacao{
+    color: black;
+    font-size: 18px;
+}
+
+.h2_apresentacao{
+    color: var(--Nrosa);
+}
+
+
+
+/*USO GERAL*/
+
+.call_box {
+    margin: auto;
+    text-align: center;
+    width: max-content;
+    border-radius: 5px;
+    transition: transform 0.2s ease;
+    background-color: var(--Nroxo);
+    padding: 0px 5px;
+}
+
+.call_box h3{
+    color: var(--Nverde);
+}
+
+.call_box:hover {
+    transform: scale(1.08);
+}
+
+.material-icons, .material-icons-outlined{
+    vertical-align: middle;
+}
+
+.icones_redes{
+    cursor: pointer;
+    height: 24px;
+    width: 24px;
+}
+
+main{
+    background-image: linear-gradient(to bottom, var(--Prata), var(--NewAzulT), var(--Prata),var(--NewAzulT), var(--Prata));
+}
+
+main img{
+    transition: transform 0.2s ease;
+}
+
+main img:hover{
+    transform: scale(1.08);
+}
+
+/*HEADER*/
+
+header {
+    background-color: var(--Prata);
+
+}
+
+.infos {
+    padding: 3px;
+    height: 35px;
+    background-color:var(--NewAzulT);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.menu_pc {
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    max-width: 1280px;
+    margin: auto;
+}
+
+.logo {
+    max-width: 324px;
+    height: auto;
+    width: 85%;
+}
+
+.pc {
+    width: 455px;
+    height: 50px;
+    background-color: var(--NewAzulT);
+    border-radius: 10px;
+    margin-left: 5px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.pc>ul {
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.pc>ul>li{
+    position: relative;
+}
+
+.pc>ul>li>a {
+    font-family: 'Ysabeau Office';
+    font-size: 20px;
+    color: var(--Cinza)
+}
+
+.pc>ul>li>a:hover {
+    color: var(--Nrosa);
+    transition: 0.4s;
+}
+
+.pc>ul>li:hover .submenu_a{
+    display: block;
+}
+
+.submenu_ul{
+    position: absolute;
+    left: 0;
+    background-color: var(--NewAzulT);
+    padding: 3px 0px;
+    border-radius: 10px;
+    z-index: 1;
+}
+
+.submenu_li{
+    margin: 3px 0px;
+    width: max-content;
+}
+
+.submenu_a{
+    font-family: 'Ysabeau Office';
+    font-size: 20px;
+    color: var(--Cinza);
+    display: none;
+    padding: 5px;
+}
+
+.submenu_a:hover{
+    color: var(--Nrosa);
+    transition: 0.4s;
+}
+
+
+.menu_pc>button {
+    background-color: transparent;
+    border: none;
+    display: none;
+}
+
+.mobile {
+    background-color: rgba(128, 128, 128, 0.062);
+    max-width: 1280px;
+    margin: auto;
+    text-align: center;
+    width: 100vw;
+    height: 100%;
+    display: none;
+}
+
+.mobile>ul {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    max-width: 1280px;
+    margin: auto;
+}
+
+.mobile>ul>li {
+    padding: 10px;
+    background-color: rgb(233, 233, 233);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.submenu_ulmobile_servicos{
+    display: none;
+}
+
+.submenu_ulmobile_ebooks{
+    display: none;
+}
+
+.submenu_ulmobile_youtube{
+    display: none;
+}
+
+.submenu_limobile{
+    padding: 10px;
+    background-color: var(--NewVerde);
+    
+}
+
+.mobile button{
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    right: 5%;
+}
+
+.mobile button:hover{
+    cursor: pointer;
+}
+
+.mobile a{
+    font-family: 'Ysabeau Office';
+    font-size: 18px;
+}
+
+.open {
+    display: block;
+}
+
+/*FOOTER*/
+
+footer {
+    background-color: var(--Prata);
+    padding: 3px;
+    height: 100%;
+    background-color: var(--Prata);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    text-decoration: none;
+}
+
+.rodape_esq,
+.rodape_dir {
+    padding: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.rodape_dir>ul>li {
+    list-style: none;
+    margin: 5px;
+}
+
+.rodape_dir>ul>li>a {
+    text-decoration: none;
+    color: black;
+}
+
+/*>-----HOME-----<*/
+
+/*HOME-APRESENTAÇÃO*/
+
+.Apresentacao {
+}
+
+.fundo_apresentacao {
+    height: 100%;
+    width: 95vw;
+    max-width: 1280px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 10px;
+    flex-wrap: wrap;
+    margin: auto;
+    background-image: url('imgs/drsara.jpeg');
+    background-position: center center;
+    background-size: cover;
+    border-radius: 15px;
+}
+
+.txt_apresentacao {
+    width: 450px;
+    height: 100%;
+    text-align: center;
+    color: var(--Apreto);
+    padding: 10px;
+    margin: 10px;
+}
+
+/*HOME-CONSULTÓRIO*/
+
+.Consultorio {
+    padding-top: 10px;
+}
+
+#prev2,
+#next2 {
+    position: absolute;
+    top: 50%;
+    color: #ffffff;
+    background: var(--Nrosa);
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    font-size: 25px;
+    text-align: center;
+    cursor: pointer;
+    font-weight: bolder;
+    border-radius: 50px;
+    z-index: 10;
+}
+
+#prev2 {
+    left: 20px;
+}
+
+#next2 {
+    right: 20px;
+}
+
+
+.fundo_consultorio {
+    position: relative;
+    max-width: 1280px;
+    margin: auto;
+}
+
+.slide2 {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 5px 9%;
+    max-width: 1280px;
+    margin: auto;
+    height: 100%;
+}
+
+.slide-container2 {
+    display: none;
+}
+
+.slide-container2.active {
+    display: block;
+}
+
+.img_consultorio {
+    border-radius: 2%;
+    margin: auto;
+    max-width: 80vw;
+}
+
+
+/*HOME-ODONTOLOGIA/CONSULTORIA*/
+
+.Odontologia {
+}
+
+.Consultoria {
+}
+
+.fundo_odontologia {
+    height: 100%;
+    width: 100%;
+    max-width: 1280px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 30px;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+#img_meutrabalho {
+    border-radius: 50%;
+    height: auto;
+}
+
+.txt_meutrabalho {
+    height: 100%;
+    text-align: center;
+    margin: 10px;
+}
+
+.txt_odontopediatra {
+    height: 100%;
+    text-align: center;
+    width: 90vw;
+    max-width: 700px;
+}
+
+
+/*HOME-YOUTUBE*/
+
+.fundo_youtube {
+    width: 95vw;
+    max-width: 1024px;
+    margin: auto;
+}
+
+.video_yt {
+    margin: 0px - 20px 30px -20px;
+    padding-bottom: 56.5%;
+    position: relative;
+}
+
+.video_yt>iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+/*HOME-COMENTÁRIOS*/
+
+.Comentarios {
+}
+
+.fundo_comentarios {
+    position: relative;
+    max-width: 1280px;
+    margin: auto;
+}
+
+.slide {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 5px 9%;
+    max-width: 1280px;
+    margin: auto;
+    height: 100%;
+}
+
+.slide-container {
+    display: none;
+}
+
+.slide-container.active {
+    display: block;
+}
+
+#prev,
+#next {
+    position: absolute;
+    top: 100px;
+    color: #ffffff;
+    background: var(--Nrosa);
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    font-size: 25px;
+    text-align: center;
+    cursor: pointer;
+    font-weight: bolder;
+    border-radius: 50px;
+}
+
+#prev {
+    left: 20px;
+}
+
+#next {
+    right: 20px;
+}
+
+.img_comentario {
+    border-radius: 50%;
+    margin: auto;
+}
+
+.txt_comentario {
+    width: 95vw;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+}
+
+.estrela {
+    color: #FDD663;
+}
+
+/*>-----HOME-SERVIÇOS-----<*/
+
+.Servicos_home {
+    margin-top: 20px;
+}
+
+.fundo_servicos_home {
+    height: 100%;
+    width: 100%;
+    max-width: 1280px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: auto;
+    padding: 10px;
+}
+
+.servico_home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    width: 300px;
+    background-color: var(--Prata);
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.img_servico_home {
+    height: 70%;
+    opacity: 0.8;
+    border-radius: 5px;
+    margin: 10px auto;
+}
+
+.txt_servico_home {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    justify-content: start;
+    height: 30%;
+    text-align: center;
+    position: relative;
+}
+
+.titulo_servicos_home{
+    height: 100%;
+    text-align: center;
+    width: 100vw;
+    max-width: 1280px;
+    margin: auto;
+}
+
+
+/*HOME-MAPA*/
+
+.Mapa {
+    padding-top: 30px;
+    margin: auto;
+    text-align: center;
+}
+
+.map-responsive {
+    overflow: hidden;
+    padding-bottom: 15%;
+    position: relative;
+    max-width: 800px;
+    margin: auto;
+    height: 400px;
+}
+
+.map-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/*>-----SOBRE-----<*/
+
+.Historia {
+}
+
+.p_sobre{
+    font-size: 20px;
+}
+
+.fundo_sobre {
+    height: 100%;
+    width: 100%;
+    max-width: 1280px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.fundo_sobre>#img_sobre {
+    border-radius: 50%;
+    margin: 20px auto;
+    max-width: 80vw;
+    max-height: 400px;
+}
+
+.txt_sobre {
+    height: 100%;
+    text-align: center;
+    width: 90vw;
+    max-width: 800px;
+}
+
+
+/*>-----SERVIÇOS-----<*/
+
+.Servicos {
+}
+
+.fundo_servicos {
+    height: 100%;
+    width: 100%;
+    max-width: 1280px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: auto;
+    padding: 10px;
+}
+
+.servico {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    width: 300px;
+    background-color: var(--Prata);
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.txt_servico > .abrirfechar_modal{
+    position: absolute;
+    bottom: 10px;
+  }
+
+.img_servico {
+    height: 70%;
+    opacity: 0.8;
+    border-radius: 5px;
+    margin: 10px auto;
+}
+
+.txt_servico {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    justify-content: start;
+    height: 30%;
+    text-align: center;
+    position: relative;
+}
+
+.titulo_servicos{
+    height: 100%;
+    text-align: center;
+    width: 100vw;
+    max-width: 1280px;
+    margin: auto;
+}
+
+
+/*>-----SERVIÇOS-MODAL-----<*/
+
+#fade{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 5;
+  }
+  
+#modal{
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    max-width: 90vw;
+    max-height: 90vh;
+    background-color: var(--Prata);
+    padding: 2%;
+    border-radius: 15px;
+    z-index: 10;
+    overflow-y: auto;
+  }
+  
+  #fade,
+  #modal {
+    transition: 0.5s;
+    opacity: 1;
+    pointer-events: all;
+  }
+  
+  .modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+  }
+
+  .modal-body{
+    margin-bottom: 10px;
+  }
+   
+  #modal.hide,
+  #fade.hide {
+    opacity: 0;
+    pointer-events: none;
+  }
+  
+  #modal.hide {
+    top: 0;
+  }
+
+  .abrirfechar_modal{
+    border: none;
+    margin: 10px;
+    cursor: pointer;
+  }
+
+  .txt_esp{
+    display: none;
+  }
+
+  .open_text{
+    display: block;
+}
+
+.txt_esp li{
+    list-style-position: inside;
+    list-style: square;
+    text-align: justify;
+    margin-left: 20px;
+    color: var(--Cinza);
+}
+
+/*>-----E-BOOKS-----<*/
+
+.Ebooks {
+    padding: 10px;
+}
+
+.titulo_ebooks{
+    height: 100%;
+    text-align: center;
+    width: 100vw;
+    max-width: 1280px;
+    margin: auto;
+}
+
+.fundo_ebooks {
+    height: 100%;
+    width: 100%;
+    max-width: 1280px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: auto;
+    padding: 10px;
+}
+
+.ebook {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 90vw;
+    max-width: 647px;
+    background-color: var(--Prata);
+    margin: 5px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.ebook li{
+    list-style-type: upper-roman;
+    list-style-position: inside;
+}
+
+.img_ebook {
+    height: 70%;
+    opacity: 0.8;
+    border-radius: 5px;
+    margin: 10px auto;
+    max-width: 95vw;
+}
+
+/*>-----YOUTUBE-----<*/
+
+.YTClubinho{
+    text-align: center;
+}
+
+.YTAmementacao{
+    text-align: center;
+}
+
+.titulo_youtube{
+    height: 100%;
+    text-align: center;
+    width: 100vw;
+    max-width: 1280px;
+    margin: auto;
+}
+
+/*>-----CONTATOS-----<*/
+
+.Contatos {
+}
+
+.fundo_contatos {
+    height: 100%;
+    width: 100%;
+    max-width: 1280px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.fundo_contatos>#img_contatos {
+    border-radius: 15px;
+    margin: 5px 10px;
+    max-width: 80vw;
+}
+
+.txt_contatos {
+    width: 500px;
+    height: 100%;
+    text-align: center;
+    color: var(--Apreto);
+    padding: 10px;
+    margin: 10px;
+}
+
+.txt_contatos > h4{
+    text-align: left;
+}
+
+
+#mapa_contato{
+    background-image: linear-gradient(to bottom, var(--AazulO), var(--Prata));
+}
+
+/*RESPONSIVIDADE*/
+
+@media (max-width:1024px) {
+    .infos {
+        display: none;
+    }
+
+    .icones_menu{
+        display: none;
+    }
+
+    .pc {
+        display: none;
+    }
+
+    .menu_pc>button {
+        display: block;
+    }
+
+    .menu_pc>button>.material-symbols-outlined:hover {
+        cursor: pointer;
+    }
+
+    .rodape_dir {
+        display: none;
+    }
+
+    #modal h2, #modal h3, #modal h4, #modal p{
+        font-size: 95%;
+    }
+
+    .fundo_apresentacao {
+        justify-content: center;
+        background-image: url('imgs/drsaramobile.jpeg');
+    }
+    
+    .h2_apresentacao{
+        font-size: 15px;
+    }
+
+    .p_sobre{
+        font-size: 16px;
+    }
+
+}
+
+@media (min-width:1025px) {
+    .mobile {
+        display: none;
+    }
+}

@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="imgs/favicon.png">
+    <title>Dra. Sara Viegas - Home</title>
+</head>
+<body onresize="mudarTamanho()">
+
+    <header>
+        <section class="Informacoes_Header"></section>
+            <div class="infos">
+                <span class="material-icons">call</span>
+                <h4>&nbsp (42) 9 9984-4017 &nbsp&nbsp&nbsp</h4>
+                <span class="material-icons">location_on</span>
+                <h4>&nbsp Rua Sete de Setembro, 800 - Sala 302 - Centro, Ponta Grossa - PR &nbsp</h4>
+            </div>
+        <section class="Menu">
+            <div class="menu_pc">
+                <a href="home.html"><img class="logo" src="imgs/logo.png" alt="Logo"></a>
+                <div class="icones_menu">
+                    <span><a aria-label="Chat" target="_blank" href="https://wa.me/5542999844017">
+                    <img class="icones_redes" alt="Chat on WhatsApp" src="imgs/whats.svg"/></a></span>&nbsp
+                    <span><a href="https://instagram.com/drasaraviegas?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D" target="_blank"><img class="icones_redes" src="imgs/instagram.png" alt="Icone Instagram"></a></span>&nbsp
+                    <span><a href="https://www.facebook.com/drasara.odpediatra?mibextid=ZbWKwL" target="_blank"><img class="icones_redes" src="imgs/facebook.png" alt="Icone Facebook"></a></span>&nbsp
+                    <span><a href="https://www.youtube.com/@drasaraviegas" target="_blank"><img class="icones_redes" src="imgs/youtube.png" alt="Icone YouTube"></a></span>&nbsp
+                </div>
+                <nav class="pc">
+                    <ul>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="sobre.html">Sobre</a></li>
+                        <li>
+                            <a href="servicos.html">Serviços</a>
+                            <ul class="submenu_ul">
+                                <li class="submenu_li"><a class="submenu_a" href="servicos.html#anchor_odontopediatria">Odontopediatria</a></li>
+                                <li class="submenu_li"><a class="submenu_a" href="servicos.html#anchor_amamentacao">Consultoria Amamentação</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="ebooks.html">E-Books</a>
+                            <ul class="submenu_ul">
+                                <li class="submenu_li"><a class="submenu_a" href="ebooks.html#anchor_manual_mae_prevenida">Manual da Mãe Prevenida</a></li>
+                                <li class="submenu_li"><a class="submenu_a" href="ebooks.html#anchor_guia_completo_amamentacao">Guia Completo da Amamentação</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="youtube.html">YouTube</a>
+                            <ul class="submenu_ul">
+                                <li class="submenu_li"><a class="submenu_a" href="youtube.html#anchor_ytclubinho">Clubinho da Tia Sara</a></li>
+                                <li class="submenu_li"><a class="submenu_a" href="youtube.html#anchor_ytamamentacao">Amamentação</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </nav>
+                <button onclick="menuShow()"><span class="material-symbols-outlined">menu</span></button>
+            </div>
+
+                <nav class="mobile">
+                    <ul>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="sobre.html">Sobre</a></li>
+                        <li>
+                            <a href="servicos.html">Serviços</a>
+                            <button onclick="submenuServicos()"><span class="material-icons-outlined">arrow_drop_down</span></button>
+                        </li>
+                        <ul class="submenu_ulmobile_servicos">
+                            <li class="submenu_limobile"><a class="submenu_amobile" href="servicos.html#anchor_odontopediatria">Odontopediatria</a></li>
+                            <li class="submenu_limobile"><a class="submenu_amobile" href="servicos.html#anchor_amamentacao">Consultoria Amamentação</a></li>
+                        </ul>
+                        <li>
+                            <a href="ebooks.html">E-Books</a>
+                            <button onclick="submenuEbooks()"><span class="material-icons-outlined">arrow_drop_down</span></button>
+                        </li>
+                        <ul class="submenu_ulmobile_ebooks">
+                            <li class="submenu_limobile"><a class="submenu_amobile" href="ebooks.html#anchor_manual_mae_prevenida">Manual da Mãe Prevenida</a></li>
+                            <li class="submenu_limobile"><a class="submenu_amobile" href="ebooks.html#anchor_guia_completo_amamentacao">Guia Completo da Amamentação</a></li>
+                        </ul>
+                        <li>
+                            <a href="youtube.html">YouTube</a>
+                            <button onclick="submenuYoutube()"><span class="material-icons-outlined">arrow_drop_down</span></button>
+                        </li>
+                        <ul class="submenu_ulmobile_youtube">
+                            <li class="submenu_limobile"><a class="submenu_amobile" href="youtube.html#anchor_ytclubinho">Clubinho da Tia Sara</a></li>
+                            <li class="submenu_limobile"><a class="submenu_amobile" href="youtube.html#anchor_ytamamentacao">Amamentação</a></li>
+                        </ul>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+            
+        </section>
+    </header>
+
+    <main>
+        <section class="Apresentacao">
+            <div class="fundo_apresentacao">
+                <div class="txt_apresentacao">
+                    <h2>Muito prazer!</h2><br>
+                    <h1>Sou a Dra. Sara Viegas!</h1><br>
+                    <h2>Odontopediatra e Consultora de Amamentação</h2><br>
+                    <p class="p_apresentacao">Meu trabalho já alcançou mais de 2500 <em>gestantes, bebês e crianças</em>. Minha missão é pautada no fato de que <strong>a prevenção começa na gestação</strong>,
+                        garantindo a saúde bucal da gestante e a sua preparação para a amamentação e cuidados com a saúde oral do bebê.
+                    </p><br>
+                    <div class="call_box">
+                        <a href="sobre.html"><h3>Saiba mais!</h3></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="Odontologia">
+            <div class="fundo_odontologia">
+                <img id="img_meutrabalho" src="imgs/home2.jpg" alt="Dra. Sara Viegas">
+                    <div class="txt_meutrabalho">
+                    <h3><strong>ODONTOPEDIATRIA</strong></h3><br>
+                    <h2>Odontopediatra, Mestre e Doutoranda em Odontologia</h2>
+                    <h2>Cirurgiã-Dentista CRO/PR 25.025</h2>
+                    </div>
+            </div>
+    
+            <div class="fundo_odontologia">
+                <div class="fundo_youtube">
+                    <h2 class="h2_apresentacao">SEU FILHO PODE ME CONHECER ANTES MESMO DE CHEGAR NO CONSULTÓRIO</h2>
+                    <h2 class="h2_apresentacao">CONHEÇA MEU CANAL NO YOUTUBE!</h2>
+                    <div class="video_yt"> 
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/nHL6R85Hcns?si=8fL66fwUDeb4cJgm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+            </div>
+    
+        </section>
+
+        <section class="Consultorio">
+            <div class="fundo_consultorio">
+                <div id="prev2" onclick="prev2()"> < </div>
+                <div id="next2" onclick="next2()"> > </div>
+                <h2 class="h2_apresentacao">ALGUMAS FOTOS DO MEU CONSULTÓRIO!</h2><br>
+                <div class="slide-container2 active">
+                    <div class="slide2">
+                        <img class="img_consultorio" src="imgs/consultorio1.jpg" alt="">
+                    </div>
+                </div>
+                <div class="slide-container2">
+                    <div class="slide2">
+                        <img class="img_consultorio" src="imgs/consultorio2.jpg" alt="">
+                    </div>
+                </div>
+                <div class="slide-container2">
+                    <div class="slide2">
+                        <img class="img_consultorio" src="imgs/consultorio3.jpg" alt="">
+                    </div>
+                </div>
+                <div class="slide-container2">
+                    <div class="slide2">
+                        <img class="img_consultorio" src="imgs/consultorio4.jpg" alt="">
+                    </div>
+                </div>
+                <div class="slide-container2">
+                    <div class="slide2">
+                        <img class="img_consultorio" src="imgs/consultorio5.jpg" alt="">
+                    </div>
+                </div>
+        </section>
+
+        <section class="Consultoria">
+            <div class="fundo_odontologia">
+                <img id="img_meutrabalho" src="imgs/home3.jpg" alt="Dra. Sara Viegas">
+                    <div class="txt_meutrabalho">
+                    <h3><strong>CONSULTORIA DE AMAMENTAÇÃO</strong></h3><br>
+                    <h2>Especialista em Aleitamento Materno e Consultora de Amamentação</h2>
+                    </div>
+            </div>
+    
+            <div class="fundo_odontologia">
+                <div class="fundo_youtube">
+                    <div class="video_yt"> 
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/EmXJm6QDn_g?si=wXcjFDuamvDPtIqC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+    
+
+        </section>
+
+        <section class="Comentarios">
+            <div class="fundo_comentarios">
+                <div id="prev" onclick="prev()"> < </div>
+                <div id="next" onclick="next()"> > </div>
+                <h2 class="h2_apresentacao">O QUE ESTÃO FALANDO SOBRE MIM?</h2><br>
+                <div class="slide-container active">
+                    <div class="slide">
+                        <img class="img_comentario" src="imgs/1.png" alt="">
+                        <div class="txt_comentario">
+                            <h3>Pamela Martins</h3>
+                            <h4>5,0<span class="estrela"> &#9733;&#9733;&#9733;&#9733;&#9733;</span></h4><br>
+                            <p>A experiência da Manuella 6 anos com a tia Sara foi incrível! Manu infelizmente tinha muito medo de dentistas, os profissionais falavam em até sedar ela para realizar os procedimentos necessários, a Sara foi minha última esperança! Desde o primeiro atendimento ela nos tratou com muito carinho e respeito, respeitou os medos da Manu, sempre nos deixou ciente de tudo que estava acontecendo e de como iria proceder com o atendimento! O resultado foi que conseguimos realizar todo o tratamento nescessário sem uso de sedação, com muito amor e cuidado de ambas as partes, a tia Sara mostrou para a Manu que o tratamento é tranquilo as vezes da uma dorzinha uma picadinha, mais que é rápido! Hoje as consultas são ainda mais tranquilas, a Manu sempre fala que não vê a hora de ir na tia Sara novamente. Eu não conhecia ainda profissional com tanta desenvoltura e paciência como ela, poderia escrever durante horas sobre a profissional e ser humano incrível que a tia Sara é. Deixo aqui a minha eterna gratidão e carinho por todo cuidado e amor que você tem conosco! E se você que está lendo isso precisar de atendimento odontopediátrico sem dúvidas eu recomendo a tia Sara, vai sem medo que o clube do dentinho aguarda seu filho(a)com muito amor e cuidado!
+                            Obrigado tia Sara você é incrível nossa total confiança e gratidão pelo seu lindo trabalho!  Com carinho Manuella,mamãe e papai!</p>
+                        </div>
+                     </div>
+                    </div>
+                </div>
+                <div class="slide-container">
+                    <div class="slide">
+                        <img class="img_comentario" src="imgs/2.png" alt="">
+                        <div class="txt_comentario">
+                            <h3>Andressa Ribeiro</h3>
+                            <h4>5,0<span class="estrela"> &#9733;&#9733;&#9733;&#9733;&#9733;</span></h4><br>
+                            <p>Dra. Sara é uma profissional maravilhosa. Atende os pequenos com calma e carinho, é paciente e gentil. Tem cuidado desde o agendamento até a consulta em si. Aqui em casa é só alegria quando chega o dia de visitá-la, porque sabem que serão bem tratados e acolhidos. Amam ir visitar essa Dra, que além de cuidar dos pequenos conversa adequadamente com os pais mostrando a importância do cuidado com os dentes e dando dicas que facilitam a escovação no dia a dia.
+                            Adoramos a Dra. Sarinha!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide-container">
+                    <div class="slide">
+                        <img class="img_comentario" src="imgs/3.png" alt="">
+                        <div class="txt_comentario">
+                            <h3>Viviane Sastre</h3>
+                            <h4>5,0<span class="estrela"> &#9733;&#9733;&#9733;&#9733;&#9733;</span></h4><br>
+                            <p>Agradeço a excelência do seu trabalho e tratamento com Alonso e conosco! Vc fez a diferença na vida dele desde o primeiro atendimento até um dos dias mais difíceis que ele já passou, trazendo alívio depois de tanto sofrimento! Teremos sempre um carinho imenso por vc e gratidão por tamanho cuidado!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide-container">
+                    <div class="slide">
+                        <img class="img_comentario" src="imgs/4.png" alt="">
+                        <div class="txt_comentario">
+                            <h3>Janaina Souza</h3>
+                            <h4>5,0<span class="estrela"> &#9733;&#9733;&#9733;&#9733;&#9733;</span></h4><br>
+                            <p>A dra. Sara é a pessoa que confio de olhos fechados para cuidar das minhas filhas
+                                O ambiente é acolhedor e agradável, as orientações são tranquilas e cheias de paciência, os materiais de qualidade, o atendimento é impecável do início ao fim! Não troco por nada!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide-container">
+                    <div class="slide">
+                        <img class="img_comentario" src="imgs/5.png" alt="">
+                        <div class="txt_comentario">
+                            <h3>aline diandra Moleta</h3>
+                            <h4>5,0<span class="estrela"> &#9733;&#9733;&#9733;&#9733;&#9733;</span></h4><br>
+                            <p>Atendimento excelente da Dra Sara, meu filho chegou amedontrado e com cáries, ela foi muito profissional e dedicada ganhou confiança do meu filho de 5 anos e logo iniciado tratamento com muito eficácia, Heitor atualmente está trocando dentes de leite para permanente e feliz com seus dentinhos saudáveis, recomendo essa profissional para aquelas mães que ficam desesperadas quando a cáries ataca, mas também recomendo para mamães de bebês de primeiros dentinhos importante desde início ter acompanhamentos além de tudo os valores são acessíveis. Mas o que importa é ver os nossos filhos com aquele sorriso lindo saudável.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide-container">
+                    <div class="slide">
+                        <img class="img_comentario" src="imgs/6.png" alt="">
+                        <div class="txt_comentario">
+                            <h3>Priscila Canteri</h3>
+                            <h4>5,0<span class="estrela"> &#9733;&#9733;&#9733;&#9733;&#9733;</span></h4><br>
+                            <p>Orientação excelente e tranquilizadora! Logo no primeiro atendimento os resultados foram incríveis. Obrigada!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="Servicos_home">
+
+            <div class="titulo_servicos_home">
+                <h2>AGENDE SEU HORÁRIO</h2><br>
+            </div>
+
+            <div class="fundo_servicos_home">
+
+                <div class="servico_home">
+                    <img class="img_servico_home" src="imgs/home1.jpeg" alt="">
+                    <div class="txt_servico_home">
+                            <div class="call_box">
+                                <a target="_blank" href="https://wa.me/5542999844017"><h3>ODONTOPEDIATRIA</h3></a>
+                            </div>     
+                    </div>
+                </div>
+
+                <div class="servico_home">
+                    <img class="img_servico_home" src="imgs/home2.jpeg" alt="">
+                    <div class="txt_servico_home">
+                            <div class="call_box">
+                                <a target="_blank" href="https://wa.me/5542999844017"><h3>CONSULTORIA</h3></a>
+                            </div>
+                    </div>
+                </div>
+        </section>
+
+        <section class="Mapa">
+            <h2>Onde me encontrar?</h2><br>
+            <div class="map-responsive">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3613.203597223406!2d-50.16073432368802!3d-25.09496851972185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94e81a41382c11bf%3A0x6a79f1a372e86589!2sR.%20Sete%20de%20Setembro%2C%20800%20-%20302%20-%20Centro%2C%20Ponta%20Grossa%20-%20PR%2C%2084010-350!5e0!3m2!1spt-BR!2sbr!4v1689014884029!5m2!1spt-BR!2sbr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>    
+        </section>
+    </main>
+
+    <footer>
+        <div class="rodape_esq">
+            <a href="home.html"><img class="logo" src="imgs/logo.png" alt="Logo"></a>
+            <h4>Rua Sete de Setembro, 800 - Sala 302 - Centro, Ponta Grossa - PR</h4>
+            <h4>Ponta Grossa, Paraná, Brasil</h4>
+            <h4>(42) 9 9984-4017</h4>
+            <h4>E-mail: sara_fracasso@yahoo.com.br</h4>
+        </div>
+
+        <div class="rodape_dir">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="servicos.html">Serviços</a></li>
+                    <li><a href="ebooks.html">E-Books</a></li>
+                    <li><a href="youtube.html">YouTube</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+        </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+    
+</body>
+    
+</html>

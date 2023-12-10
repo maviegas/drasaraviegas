@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="imgs/favicon.png">
+    <title>Dra. Sara Viegas - E-books</title>
+</head>
+<body onresize="mudarTamanho()">
+    
+    <header>
+        <section class="Informacoes_Header"></section>
+            <div class="infos">
+                <span class="material-icons">call</span>
+                <h4>&nbsp (42) 9 9984-4017 &nbsp&nbsp&nbsp</h4>
+                <span class="material-icons">location_on</span>
+                <h4>&nbsp Rua Sete de Setembro, 800 - Sala 302 - Centro, Ponta Grossa - PR &nbsp</h4>
+            </div>
+        <section class="Menu">
+            <div class="menu_pc">
+                <a href="home.html"><img class="logo" src="imgs/logo.png" alt="Logo"></a>
+                <div class="icones_menu">
+                    <span><a aria-label="Chat" target="_blank" href="https://wa.me/5542999844017">
+                    <img class="icones_redes" alt="Chat on WhatsApp" src="imgs/whats.svg"/></a></span>&nbsp
+                    <span><a href="https://instagram.com/drasaraviegas?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D" target="_blank"><img class="icones_redes" src="imgs/instagram.png" alt="Icone Instagram"></a></span>&nbsp
+                    <span><a href="https://www.facebook.com/drasara.odpediatra?mibextid=ZbWKwL" target="_blank"><img class="icones_redes" src="imgs/facebook.png" alt="Icone Facebook"></a></span>&nbsp
+                    <span><a href="https://www.youtube.com/@drasaraviegas" target="_blank"><img class="icones_redes" src="imgs/youtube.png" alt="Icone YouTube"></a></span>&nbsp
+                </div>
+                <nav class="pc">
+                    <ul>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="sobre.html">Sobre</a></li>
+                        <li>
+                            <a href="servicos.html">Serviços</a>
+                            <ul class="submenu_ul">
+                                <li class="submenu_li"><a class="submenu_a" href="servicos.html#anchor_odontopediatria">Odontopediatria</a></li>
+                                <li class="submenu_li"><a class="submenu_a" href="servicos.html#anchor_amamentacao">Consultoria Amamentação</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="ebooks.html">E-Books</a>
+                            <ul class="submenu_ul">
+                                <li class="submenu_li"><a class="submenu_a" href="ebooks.html#anchor_manual_mae_prevenida">Manual da Mãe Prevenida</a></li>
+                                <li class="submenu_li"><a class="submenu_a" href="ebooks.html#anchor_guia_completo_amamentacao">Guia Completo da Amamentação</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="youtube.html">YouTube</a>
+                            <ul class="submenu_ul">
+                                <li class="submenu_li"><a class="submenu_a" href="youtube.html#anchor_ytclubinho">Clubinho da Tia Sara</a></li>
+                                <li class="submenu_li"><a class="submenu_a" href="youtube.html#anchor_ytamamentacao">Amamentação</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </nav>
+                <button onclick="menuShow()"><span class="material-symbols-outlined">menu</span></button>
+            </div>
+
+                <nav class="mobile">
+                    <ul>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="sobre.html">Sobre</a></li>
+                        <li>
+                            <a href="servicos.html">Serviços</a>
+                            <button onclick="submenuServicos()"><span class="material-icons-outlined">arrow_drop_down</span></button>
+                        </li>
+                        <ul class="submenu_ulmobile_servicos">
+                            <li class="submenu_limobile"><a class="submenu_amobile" href="servicos.html#anchor_odontopediatria">Odontopediatria</a></li>
+                            <li class="submenu_limobile"><a class="submenu_amobile" href="servicos.html#anchor_amamentacao">Consultoria Amamentação</a></li>
+                        </ul>
+                        <li>
+                            <a href="ebooks.html">E-Books</a>
+                            <button onclick="submenuEbooks()"><span class="material-icons-outlined">arrow_drop_down</span></button>
+                        </li>
+                        <ul class="submenu_ulmobile_ebooks">
+                            <li class="submenu_limobile"><a class="submenu_amobile" href="ebooks.html#anchor_manual_mae_prevenida">Manual da Mãe Prevenida</a></li>
+                            <li class="submenu_limobile"><a class="submenu_amobile" href="ebooks.html#anchor_guia_completo_amamentacao">Guia Completo da Amamentação</a></li>
+                        </ul>
+                        <li>
+                            <a href="youtube.html">YouTube</a>
+                            <button onclick="submenuYoutube()"><span class="material-icons-outlined">arrow_drop_down</span></button>
+                        </li>
+                        <ul class="submenu_ulmobile_youtube">
+                            <li class="submenu_limobile"><a class="submenu_amobile" href="youtube.html#anchor_ytclubinho">Clubinho da Tia Sara</a></li>
+                            <li class="submenu_limobile"><a class="submenu_amobile" href="youtube.html#anchor_ytamamentacao">Amamentação</a></li>
+                        </ul>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+            
+        </section>
+    </header>
+
+    <main>
+        <section class="Ebooks">
+            <div class="titulo_ebooks">
+                <h2>E-Books</h2>
+                <h1>Dra. Sara Viegas</h1>
+            </div>
+
+            <div class="fundo_ebooks">
+                <div class="ebook">
+                    <h2 id="anchor_manual_mae_prevenida">Manual da Mãe Prevenida</h2><br>
+                    <p>Um guia completo para você se tornar uma expert no cuidado da saúde bucal do seu filho, prevenindo doenças e evitando tratamentos invasivos.</p><br>
+                    <h4>No E-book você irá aprender em cada capítulo:</h4><br>
+                    <ol>
+                        <li>É melhor trabalhar para prevenir do que remediar</li>
+                        <li>Dentes nascendo: como aliviar o desconforto do bebê</li>
+                        <li>Como cuidar dos primeiros dentinhos</li>
+                        <li>A primeira consulta odontológica</li>
+                        <li>Qual pasta e escova de dentes adequadas?</li>
+                        <li>"Meu filho chora e se joga para trás na hora de escovar os dentes - que fazer?"</li>
+                        <li>O que é cárie e alimentos cariogênicos?</li>
+                        <li>"E se meu filho precisar fazer canal?"</li>
+                        <li>Queda dos primeiros dentes de leite</li>
+                        <li>Medo de dentista</li>
+                    </ol>
+                    <br><h4>Para adquirir, basta clicar no link abaixo.</h4><br>
+                    <div class="call_box">
+                        <a href="https://hotmart.com/pt-br/marketplace/produtos/manual-da-mae-prevenida/N81988761I" target="_blank"><h3>Manual da Mãe Prevenida</h3></a>
+                    </div>
+                </div>
+                <img src="imgs/ebook1.jpeg" alt="" class="img_ebook">
+            </div>
+
+            <div class="fundo_ebooks">
+                <div class="ebook">
+                    <h2 id="anchor_guia_completo_amamentacao">Guia Completo da Amamentação</h2><br>
+                    <h4>É muito comum chegar à gestação sem saber nada sobre amamentação, afinal não é um tipo de conhecimento que se aprende na escola não é mesmo?</h4><br>
+                    <p>A internet é um ambiente lotado de informações que você encontra um pouco ali e um pouco aqui. Mas a verdade é que com informação e orientação adequadas a mãe pode driblar muitas dificuldades que podem aparecer pelo caminho.</p>
+                    <p>Por isso, eu desenvolvi um guia reunindo em um só lugar as principais dúvidas sobre amamentação para ajudar a nova mamãe nessa fase que se inicia.</p>
+                    <br><h4>Para baixar gratuitamente, basta clicar no link abaixo.</h4><br>
+                    <div class="call_box">
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLScEfYzOFTgZwE4q060ESTeMOT5mmIaMgFttYJtlnQUY3oEIkg/viewform?pli=1" target="_blank"><h3>Guia Completo da Amamentação</h3></a>
+                    </div>
+                </div>
+                <img src="imgs/ebook2.jpeg" alt="" class="img_ebook">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="rodape_esq">
+            <a href="home.html"><img class="logo" src="imgs/logo.png" alt="Logo"></a>
+            <h4>Rua Sete de Setembro, 800 - Sala 302 - Centro, Ponta Grossa - PR</h4>
+            <h4>Ponta Grossa, Paraná, Brasil</h4>
+            <h4>(42) 9 9984-4017</h4>
+            <h4>E-mail: sara_fracasso@yahoo.com.br</h4>
+        </div>
+
+        <div class="rodape_dir">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="servicos.html">Serviços</a></li>
+                    <li><a href="ebooks.html">E-Books</a></li>
+                    <li><a href="youtube.html">YouTube</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+        </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+    
+</body>
+    
+</html>
